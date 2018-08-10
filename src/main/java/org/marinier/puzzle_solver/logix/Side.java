@@ -1,4 +1,4 @@
-package org.marinier.puzzle_solver;
+package org.marinier.puzzle_solver.logix;
 
 public enum Side {
 	NORTH,

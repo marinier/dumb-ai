@@ -1,4 +1,4 @@
-package org.marinier.puzzle_solver;
+package org.marinier.puzzle_solver.logix;
 
 import java.util.ArrayList;
 import java.util.Collections;
