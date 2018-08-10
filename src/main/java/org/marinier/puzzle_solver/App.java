@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.LongSummaryStatistics;
 
 import org.marinier.puzzle_solver.logix.Logix;
+import org.marinier.puzzle_solver.snakes_and_ladders.SnakesAndLadders;
 
 public class App 
 {
@@ -12,9 +13,23 @@ public class App
     {
     	final int numAttempts = 5000;
     	final int numTriesPerAttempt = 5000;
-    	List<Result> results = new ArrayList<>(numAttempts);
     	
-    	Puzzle puzzle = new Logix();
+    	
+    	Puzzle puzzle;
+    	
+    	//puzzle = new Logix();
+    	//List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	
+    	puzzle = new SnakesAndLadders();
+    	List<Result> snakesAndLaddersResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	
+    	//computeStats("Logix", logixResults);
+    	computeStats("Snakes and Ladders", snakesAndLaddersResults);
+    }
+    
+    private static List<Result> solve(Puzzle puzzle, int numAttempts, int numTriesPerAttempt)
+    {
+    	List<Result> results = new ArrayList<>(numAttempts);
     	
     	for(int i = 0; i < numAttempts; i++)
     	{
@@ -22,10 +37,10 @@ public class App
     		results.add(result);
     	}
     	
-    	computeStats(results);
+    	return results;
     }
     
-    private static void computeStats(List<Result> results)
+    private static void computeStats(String name, List<Result> results)
     {
     	long numSolved = results.stream().filter(r -> r.isSolved()).count();
     	LongSummaryStatistics solveStepsStats = results.stream().filter(r -> r.isSolved()).mapToLong(r -> r.getSteps()).summaryStatistics();
@@ -33,7 +48,7 @@ public class App
     	
     	
     	System.out.println();
-    	System.out.println("*******************");
+    	System.out.println("*** " + name + "***");
     	System.out.println("Num solved = " + numSolved + " out of " + results.size() + " attempts");
     	System.out.println();
     	System.out.println("Solve steps:");

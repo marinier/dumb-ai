@@ -2,9 +2,14 @@ package org.marinier.puzzle_solver;
 
 public interface Puzzle {
 	
+	default void initialize() {}
+	
 	boolean playOnce();
 	
 	public default Result run(int maxTries) {
+		
+		initialize();
+		
 		long startTime = System.currentTimeMillis();
 		
 		boolean solved = false;
