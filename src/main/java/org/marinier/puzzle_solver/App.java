@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.LongSummaryStatistics;
 
 import org.marinier.puzzle_solver.logix.Logix;
+import org.marinier.puzzle_solver.n_queens.NQueens;
 import org.marinier.puzzle_solver.snakes_and_ladders.SnakesAndLadders;
 
 public class App 
@@ -18,13 +19,17 @@ public class App
     	
     	Puzzle puzzle;
     	
-    	puzzle = new Logix();
-    	List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
-    	computeStats("Logix", logixResults);
+//    	puzzle = new Logix();
+//    	List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+//    	computeStats("Logix", logixResults);
+//    	
+//    	puzzle = new SnakesAndLadders();
+//    	List<Result> snakesAndLaddersResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+//    	computeStats("Snakes and Ladders", snakesAndLaddersResults);
     	
-    	puzzle = new SnakesAndLadders();
-    	List<Result> snakesAndLaddersResults = solve(puzzle, numAttempts, numTriesPerAttempt);
-    	computeStats("Snakes and Ladders", snakesAndLaddersResults);
+    	puzzle = new NQueens(50);
+    	List<Result> nQueensResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	computeStats("NQueens", nQueensResults);
     }
     
     private static List<Result> solve(Puzzle puzzle, int numAttempts, int numTriesPerAttempt)
@@ -59,7 +64,8 @@ public class App
     	System.out.println();
     	System.out.println("Solve time (ms):");
     	printStats(solveTimeStats);
-    	System.out.println("Shortest solution: " + shortestSolution);
+    	System.out.println("Shortest solution:");
+    	System.out.println(shortestSolution);
     	System.out.println("*******************");
     }
     
