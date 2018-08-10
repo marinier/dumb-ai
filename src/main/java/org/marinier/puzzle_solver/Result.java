@@ -1,14 +1,17 @@
 package org.marinier.puzzle_solver;
 
 public class Result {
-	private boolean solved;
-	private long steps;
-	private long time; // in ms
+	private final boolean solved;
+	private final long steps;
+	private final long time; // in ms
+	private final String solution; // printable solution representation
 	
-	public Result(boolean solved, long steps, long time) {
+	public Result(boolean solved, long steps, long time, String solution) {
 		this.solved = solved;
 		this.steps = steps;
 		this.time = time;
+		this.solution = solution;
+		
 	}
 
 	public boolean isSolved() {
@@ -21,6 +24,10 @@ public class Result {
 
 	public long getTime() {
 		return time;
+	}
+	
+	public String getSolution() {
+		return solution;
 	}
 	
 	

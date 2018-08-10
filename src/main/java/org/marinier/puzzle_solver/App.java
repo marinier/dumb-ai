@@ -1,6 +1,7 @@
 package org.marinier.puzzle_solver;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.LongSummaryStatistics;
 
@@ -17,13 +18,12 @@ public class App
     	
     	Puzzle puzzle;
     	
-    	//puzzle = new Logix();
-    	//List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	puzzle = new Logix();
+    	List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	computeStats("Logix", logixResults);
     	
     	puzzle = new SnakesAndLadders();
     	List<Result> snakesAndLaddersResults = solve(puzzle, numAttempts, numTriesPerAttempt);
-    	
-    	//computeStats("Logix", logixResults);
     	computeStats("Snakes and Ladders", snakesAndLaddersResults);
     }
     
@@ -35,17 +35,20 @@ public class App
     	{
     		Result result = puzzle.run(numTriesPerAttempt);
     		results.add(result);
+    		if( i % 100 == 0 ) System.out.print('.'); // progress indicator
     	}
+    	
+    	System.out.println();
     	
     	return results;
     }
     
     private static void computeStats(String name, List<Result> results)
     {
-    	long numSolved = results.stream().filter(r -> r.isSolved()).count();
-    	LongSummaryStatistics solveStepsStats = results.stream().filter(r -> r.isSolved()).mapToLong(r -> r.getSteps()).summaryStatistics();
-    	LongSummaryStatistics solveTimeStats = results.stream().filter(r -> r.isSolved()).mapToLong(r -> r.getTime()).summaryStatistics();
-    	
+    	final long numSolved = results.stream().filter(Result::isSolved).count();
+    	final LongSummaryStatistics solveStepsStats = results.stream().filter(Result::isSolved).mapToLong(Result::getSteps).summaryStatistics();
+    	final LongSummaryStatistics solveTimeStats = results.stream().filter(Result::isSolved).mapToLong(Result::getTime).summaryStatistics();
+    	final String shortestSolution = results.stream().min(Comparator.comparing(Result::getSteps)).get().getSolution();
     	
     	System.out.println();
     	System.out.println("*** " + name + "***");
@@ -54,8 +57,9 @@ public class App
     	System.out.println("Solve steps:");
     	printStats(solveStepsStats);
     	System.out.println();
-    	System.out.println("Solve time:");
+    	System.out.println("Solve time (ms):");
     	printStats(solveTimeStats);
+    	System.out.println("Shortest solution: " + shortestSolution);
     	System.out.println("*******************");
     }
     

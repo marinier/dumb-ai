@@ -10,28 +10,21 @@ public interface Puzzle {
 		
 		initialize();
 		
-		long startTime = System.currentTimeMillis();
-		
 		boolean solved = false;
-        
         long numTries = 0;
+
+		final long startTime = System.currentTimeMillis();
+		
         do {
-        	
         	numTries++;
-        	
 	        solved = playOnce();
 	        
         } while(!solved && numTries < maxTries);
-		long totalTime = System.currentTimeMillis() - startTime;
+        
+		final long totalTime = System.currentTimeMillis() - startTime;
+		final String solution = solved ? this.toString() : "Failed to solve";
 		
-		if(solved) {
-			System.out.println("Solution:");
-			System.out.println(this.toString());
-		} else {
-			System.out.println("Failed to solve");
-		}
-		System.out.println(numTries + " tries in " + totalTime + " ms");
-		return new Result(solved, numTries, totalTime);
+		return new Result(solved, numTries, totalTime, solution);
 		
 	}
 }
