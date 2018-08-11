@@ -7,11 +7,11 @@ import java.util.List;
 public class Board {
 	private Card board[][] = new Card[3][3];
 	
-	public void reset() {
+	void reset() {
 		this.board = new Card[3][3];
 	}
 	
-	public boolean setCard(int row, int col, Card card) {
+	boolean setCard(int row, int col, Card card) {
 		// generate a random set of orientations to try
 		List<Integer> northsides = Arrays.asList(0,1,2,3);
 		Collections.shuffle(northsides);
@@ -73,7 +73,8 @@ public class Board {
 		String result = "";
 		for(int row = 0; row < 3; row++) {
 			for(int col = 0; col < 3; col++) {
-				result += this.board[row][col].toString() + " *|* ";
+				Card card = this.board[row][col];
+				result += card == null ? " " : card.toString() + " *|* ";
 			}
 			result += "\n";
 		}

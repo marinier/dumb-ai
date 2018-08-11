@@ -5,6 +5,7 @@ import org.marinier.puzzle_solver.Puzzle;
 public class Logix implements Puzzle {
 	
 	private Board board = new Board();
+	private int cardsPlaced = 0;
 	
 	/**
 	 * The approach is super simple: we place a random valid card in each slot until we have either solved the game or there are no valid cards left
@@ -13,13 +14,14 @@ public class Logix implements Puzzle {
 	public boolean playOnce()
     {
     	board.reset();
+    	cardsPlaced = 0;
     	Deck deck = new Deck();
     	boolean solved = placeAllCards(board, deck);
         
         return solved;
     }
         
-    public boolean placeAllCards(Board board, Deck deck) {
+    private boolean placeAllCards(Board board, Deck deck) {
     	for(int row = 0; row < 3; row++) {
         	for(int col = 0; col < 3; col++) {
         		boolean cardPlaced = false;
@@ -27,6 +29,7 @@ public class Logix implements Puzzle {
         			if(board.setCard(row, col, card)) {
         				deck.getCards().remove(card);
         				cardPlaced = true;
+        				cardsPlaced++;
         				break;
         			}
         		}
@@ -40,7 +43,13 @@ public class Logix implements Puzzle {
     }
     
     @Override
+	public double getSolutionQuality() {
+		return cardsPlaced / 9.0;
+	}
+    
+    @Override
     public String toString() {
     	return board.toString();
     }
+
 }

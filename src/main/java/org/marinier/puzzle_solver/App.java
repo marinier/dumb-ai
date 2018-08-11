@@ -19,13 +19,13 @@ public class App
     	
     	Puzzle puzzle;
     	
-//    	puzzle = new Logix();
-//    	List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
-//    	computeStats("Logix", logixResults);
-//    	
-//    	puzzle = new SnakesAndLadders();
-//    	List<Result> snakesAndLaddersResults = solve(puzzle, numAttempts, numTriesPerAttempt);
-//    	computeStats("Snakes and Ladders", snakesAndLaddersResults);
+    	puzzle = new Logix();
+    	List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	computeStats("Logix", logixResults);
+    	
+    	puzzle = new SnakesAndLadders();
+    	List<Result> snakesAndLaddersResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	computeStats("Snakes and Ladders", snakesAndLaddersResults);
     	
     	puzzle = new NQueens(50);
     	List<Result> nQueensResults = solve(puzzle, numAttempts, numTriesPerAttempt);
@@ -51,9 +51,9 @@ public class App
     private static void computeStats(String name, List<Result> results)
     {
     	final long numSolved = results.stream().filter(Result::isSolved).count();
-    	final LongSummaryStatistics solveStepsStats = results.stream().filter(Result::isSolved).mapToLong(Result::getSteps).summaryStatistics();
-    	final LongSummaryStatistics solveTimeStats = results.stream().filter(Result::isSolved).mapToLong(Result::getTime).summaryStatistics();
-    	final String shortestSolution = results.stream().min(Comparator.comparing(Result::getSteps)).get().getSolution();
+    	final LongSummaryStatistics solveStepsStats = results.stream()./*filter(Result::isSolved).*/mapToLong(Result::getSteps).summaryStatistics();
+    	final LongSummaryStatistics solveTimeStats = results.stream()./*filter(Result::isSolved).*/mapToLong(Result::getTime).summaryStatistics();
+    	final Result bestResult = results.stream().max(Comparator.comparing(Result::getSolutionQuality)).get();
     	
     	System.out.println();
     	System.out.println("*** " + name + "***");
@@ -64,8 +64,8 @@ public class App
     	System.out.println();
     	System.out.println("Solve time (ms):");
     	printStats(solveTimeStats);
-    	System.out.println("Shortest solution:");
-    	System.out.println(shortestSolution);
+    	System.out.println("Best solution: (quality = " + bestResult.getSolutionQuality() + ")" );
+    	System.out.println(bestResult.getSolution());
     	System.out.println("*******************");
     }
     

@@ -6,6 +6,8 @@ public interface Puzzle {
 	
 	boolean playOnce();
 	
+	double getSolutionQuality();
+	
 	public default Result run(int maxTries) {
 		
 		initialize();
@@ -22,9 +24,9 @@ public interface Puzzle {
         } while(!solved && numTries < maxTries);
         
 		final long totalTime = System.currentTimeMillis() - startTime;
-		final String solution = solved ? this.toString() : "Failed to solve";
+		final String solution = this.toString();
 		
-		return new Result(solved, numTries, totalTime, solution);
+		return new Result(solved, numTries, totalTime, getSolutionQuality(), solution);
 		
 	}
 }

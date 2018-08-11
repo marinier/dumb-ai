@@ -28,6 +28,12 @@ public class SnakesAndLadders implements Puzzle {
 	}
 	
 	@Override
+	public double getSolutionQuality() {
+		if(board.isSolved()) return 1.0 / solution.size();
+		return 0;
+	}
+	
+	@Override
 	public String toString() {
 		return solution.toString();
 	}
