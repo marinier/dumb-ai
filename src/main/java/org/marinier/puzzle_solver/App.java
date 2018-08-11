@@ -8,6 +8,7 @@ import java.util.LongSummaryStatistics;
 import org.marinier.puzzle_solver.logix.Logix;
 import org.marinier.puzzle_solver.n_queens.NQueens;
 import org.marinier.puzzle_solver.snakes_and_ladders.SnakesAndLadders;
+import org.marinier.puzzle_solver.tsp.Cities;
 
 public class App 
 {
@@ -30,6 +31,10 @@ public class App
     	puzzle = new NQueens(50);
     	List<Result> nQueensResults = solve(puzzle, numAttempts, numTriesPerAttempt);
     	computeStats("NQueens", nQueensResults);
+    	
+    	puzzle = new Cities();
+    	List<Result> citiesResults = solve(puzzle, numAttempts, numTriesPerAttempt);
+    	computeStats("TSP Cities", citiesResults);
     }
     
     private static List<Result> solve(Puzzle puzzle, int numAttempts, int numTriesPerAttempt)
