@@ -1,0 +1,827 @@
+..................................................
+
+*** Logix***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 602.6416
+Max: 4427
+
+Solve time (ms):
+Min: 0
+Avg: 1.5282
+Max: 31
+Best solution: (quality = 1.0)
+LEFT_FACING_CAN_RIGHT N: CAKE_LEFT S: GIRL_TOP LADY_TOP *|* LADY_BOTTOM N: LEFT_FACING_CAN_LEFT S: CAKE_RIGHT GIRL_TOP *|* GIRL_BOTTOM N: RIGHT_FACING_CAN_LEFT S: CAKE_RIGHT LADY_TOP *|* 
+CAKE_RIGHT N: GIRL_BOTTOM S: LEFT_FACING_CAN_RIGHT LADY_TOP *|* LADY_BOTTOM N: CAKE_LEFT S: LEFT_FACING_CAN_RIGHT GIRL_TOP *|* GIRL_BOTTOM N: CAKE_LEFT S: LEFT_FACING_CAN_RIGHT LADY_TOP *|* 
+CAKE_RIGHT N: LEFT_FACING_CAN_LEFT S: LADY_TOP GIRL_TOP *|* GIRL_BOTTOM N: LEFT_FACING_CAN_LEFT S: CAKE_RIGHT LADY_TOP *|* LADY_BOTTOM N: LEFT_FACING_CAN_LEFT S: GIRL_TOP CAKE_RIGHT *|* 
+
+*******************
+..................................................
+
+*** Snakes and Ladders***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 4
+Avg: 26.2902
+Max: 140
+
+Solve time (ms):
+Min: 0
+Avg: 0.003
+Max: 15
+Best solution: (quality = 0.25)
+[2, 5, 4, 6]
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 7.683
+Max: 68
+
+Solve time (ms):
+Min: 0
+Avg: 0.0252
+Max: 16
+Best solution: (quality = 1.0)
+ ||||||||
+-     Q  
+-   Q    
+-      Q 
+-Q       
+-       Q
+- Q      
+-    Q   
+-  Q     
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 16.2126
+Max: 169
+
+Solve time (ms):
+Min: 0
+Avg: 0.075
+Max: 16
+Best solution: (quality = 1.0)
+ ||||||||||
+-       Q  
+- Q        
+-    Q     
+-  Q       
+-        Q 
+-      Q   
+-         Q
+-   Q      
+-     Q    
+-Q         
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 45.7678
+Max: 372
+
+Solve time (ms):
+Min: 0
+Avg: 0.85
+Max: 16
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||
+-         Q          
+-                  Q 
+-             Q      
+-    Q               
+-              Q     
+-Q                   
+-           Q        
+-     Q              
+-        Q           
+-  Q                 
+-                 Q  
+-   Q                
+- Q                  
+-               Q    
+-          Q         
+-                   Q
+-       Q            
+-                Q   
+-            Q       
+-      Q             
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 88.9088
+Max: 778
+
+Solve time (ms):
+Min: 0
+Avg: 3.4216
+Max: 63
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||
+-            Q                 
+-                    Q         
+-                      Q       
+-                 Q            
+-                   Q          
+-             Q                
+- Q                            
+-                            Q 
+-  Q                           
+-        Q                     
+-      Q                       
+-Q                             
+-                     Q        
+-                        Q     
+-     Q                        
+-               Q              
+-                          Q   
+-              Q               
+-                       Q      
+-         Q                    
+-                  Q           
+-                         Q    
+-       Q                      
+-   Q                          
+-                Q             
+-           Q                  
+-                           Q  
+-                             Q
+-    Q                         
+-          Q                   
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 138.7806
+Max: 1094
+
+Solve time (ms):
+Min: 0
+Avg: 9.1118
+Max: 110
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||||||||||||
+-         Q                              
+-       Q                                
+-                           Q            
+-                                 Q      
+-                                     Q  
+-                  Q                     
+-                    Q                   
+-                       Q                
+-                         Q              
+-                   Q                    
+-                              Q         
+-  Q                                     
+-    Q                                   
+-              Q                         
+-                                Q       
+-                                    Q   
+-                            Q           
+-     Q                                  
+-Q                                       
+-                          Q             
+-                                       Q
+-                 Q                      
+-            Q                           
+-                                  Q     
+-           Q                            
+-                      Q                 
+-      Q                                 
+-                Q                       
+-   Q                                    
+-             Q                          
+-                        Q               
+-        Q                               
+-                                   Q    
+-                               Q        
+-                             Q          
+-                     Q                  
+- Q                                      
+-               Q                        
+-          Q                             
+-                                      Q 
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 193.0192
+Max: 1579
+
+Solve time (ms):
+Min: 0
+Avg: 19.537
+Max: 218
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||||||||||||||||||||||
+-                             Q                    
+-                Q                                 
+-                     Q                            
+-                                      Q           
+-      Q                                           
+-                                          Q       
+-             Q                                    
+-Q                                                 
+-                              Q                   
+-                  Q                               
+-                                         Q        
+-                                           Q      
+-                                    Q             
+-                                       Q          
+-                 Q                                
+-                         Q                        
+-     Q                                            
+-                                            Q     
+-            Q                                     
+-                               Q                  
+-  Q                                               
+-    Q                                             
+-                                   Q              
+-              Q                                   
+-                                        Q         
+-                    Q                             
+-       Q                                          
+-                   Q                              
+-               Q                                  
+-                                              Q   
+-                          Q                       
+-   Q                                              
+-                                 Q                
+-           Q                                      
+-                                                Q 
+- Q                                                
+-                        Q                         
+-                                  Q               
+-                            Q                     
+-                                     Q            
+-         Q                                        
+-                           Q                      
+-                                               Q  
+-                                                 Q
+-                       Q                          
+-        Q                                         
+-                                             Q    
+-                                Q                 
+-                      Q                           
+-          Q                                       
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 258.5746
+Max: 3626
+
+Solve time (ms):
+Min: 0
+Avg: 37.507
+Max: 515
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-                         Q                                  
+-                                                    Q       
+-                                                          Q 
+-    Q                                                       
+-                                                     Q      
+-                                 Q                          
+-                            Q                               
+-                                                Q           
+-      Q                                                     
+-                        Q                                   
+-                             Q                              
+-                                      Q                     
+-                  Q                                         
+-                                             Q              
+-                                        Q                   
+-       Q                                                    
+-                              Q                             
+-                                   Q                        
+-                                         Q                  
+-                       Q                                    
+-        Q                                                   
+-              Q                                             
+-                     Q                                      
+-                 Q                                          
+-     Q                                                      
+-                                                        Q   
+-               Q                                            
+-          Q                                                 
+-                                     Q                      
+-                                                 Q          
+-  Q                                                         
+-                Q                                           
+-                                  Q                         
+-                                    Q                       
+-                                              Q             
+-         Q                                                  
+-                                           Q                
+-             Q                                              
+-                                                       Q    
+-                                               Q            
+-                                                  Q         
+-                                                         Q  
+-                   Q                                        
+-                                                      Q     
+- Q                                                          
+-   Q                                                        
+-                          Q                                 
+-                                          Q                 
+-                                       Q                    
+-                      Q                                     
+-                                Q                           
+-Q                                                           
+-            Q                                               
+-                               Q                            
+-                    Q                                       
+-                                                   Q        
+-                           Q                                
+-           Q                                                
+-                                            Q               
+-                                                           Q
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 322.2184
+Max: 2805
+
+Solve time (ms):
+Min: 0
+Avg: 63.5562
+Max: 640
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-         Q                                                            
+-                                                  Q                   
+-                                                       Q              
+-                                                             Q        
+-                                Q                                     
+-Q                                                                     
+-                                        Q                             
+-                                          Q                           
+-                       Q                                              
+-                                  Q                                   
+-                Q                                                     
+-                                                   Q                  
+-                              Q                                       
+-    Q                                                                 
+- Q                                                                    
+-                          Q                                           
+-                                                    Q                 
+-                      Q                                               
+-                                   Q                                  
+-             Q                                                        
+-     Q                                                                
+-                        Q                                             
+-                                    Q                                 
+-            Q                                                         
+-                                                                    Q 
+-                                         Q                            
+-                                                                Q     
+-                                                      Q               
+-                                               Q                      
+-           Q                                                          
+-   Q                                                                  
+-                     Q                                                
+-                                                              Q       
+-                                                        Q             
+-                                              Q                       
+-                                     Q                                
+-                                                 Q                    
+-       Q                                                              
+-                                                          Q           
+-        Q                                                             
+-                                      Q                               
+-                                                               Q      
+-              Q                                                       
+-                           Q                                          
+-      Q                                                               
+-                                                                  Q   
+-                                                     Q                
+-                  Q                                                   
+-               Q                                                      
+-          Q                                                           
+-                             Q                                        
+-                         Q                                            
+-  Q                                                                   
+-                                 Q                                    
+-                 Q                                                    
+-                   Q                                                  
+-                               Q                                      
+-                                             Q                        
+-                                       Q                              
+-                                                                   Q  
+-                                                           Q          
+-                                            Q                         
+-                                                Q                     
+-                            Q                                         
+-                    Q                                                 
+-                                                         Q            
+-                                           Q                          
+-                                                            Q         
+-                                                                     Q
+-                                                                 Q    
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 395.557
+Max: 3759
+
+Solve time (ms):
+Min: 0
+Avg: 101.9508
+Max: 937
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-                                                                  Q             
+-                                                  Q                             
+-                                                             Q                  
+-       Q                                                                        
+-Q                                                                               
+-                                           Q                                    
+-     Q                                                                          
+- Q                                                                              
+-                         Q                                                      
+-               Q                                                                
+-                    Q                                                           
+-                                   Q                                            
+-                   Q                                                            
+-        Q                                                                       
+-                          Q                                                     
+-                                              Q                                 
+-                                    Q                                           
+-                                                                    Q           
+-                       Q                                                        
+-                                                       Q                        
+-                                       Q                                        
+-                                                                   Q            
+-                                                        Q                       
+-   Q                                                                            
+-           Q                                                                    
+-                                                   Q                            
+-                                                                      Q         
+-                                                           Q                    
+-                                     Q                                          
+-                                                          Q                     
+-                                                                              Q 
+-                                                                       Q        
+-                                                                          Q     
+-                                               Q                                
+-                                                                             Q  
+-                                 Q                                              
+-                                                                         Q      
+-                                                              Q                 
+-    Q                                                                           
+-              Q                                                                 
+-                                         Q                                      
+-                                                                            Q   
+-                                                     Q                          
+-                     Q                                                          
+-                Q                                                               
+-                           Q                                                    
+-          Q                                                                     
+-                                                            Q                   
+-                             Q                                                  
+-                                                 Q                              
+-                                                                 Q              
+-                                                                        Q       
+-                                             Q                                  
+-  Q                                                                             
+-             Q                                                                  
+-                                                         Q                      
+-      Q                                                                         
+-                                                                               Q
+-                                  Q                                             
+-            Q                                                                   
+-                              Q                                                 
+-                                                                     Q          
+-                      Q                                                         
+-                                          Q                                     
+-                                                    Q                           
+-                                                Q                               
+-                 Q                                                              
+-                        Q                                                       
+-                                                      Q                         
+-                                Q                                               
+-         Q                                                                      
+-                                                               Q                
+-                            Q                                                   
+-                               Q                                                
+-                                                                Q               
+-                  Q                                                             
+-                                      Q                                         
+-                                            Q                                   
+-                                                                           Q    
+-                                        Q                                       
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 473.3012
+Max: 4588
+
+Solve time (ms):
+Min: 0
+Avg: 151.7032
+Max: 1306
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-                                                                Q                         
+-                         Q                                                                
+-                           Q                                                              
+-                                              Q                                           
+-                       Q                                                                  
+-                                 Q                                                        
+-                                                   Q                                      
+- Q                                                                                        
+-   Q                                                                                      
+-                                Q                                                         
+-                                                                                 Q        
+-                                                  Q                                       
+-                                         Q                                                
+-                                                                                         Q
+-                            Q                                                             
+-                                                              Q                           
+-                                                          Q                               
+-                                  Q                                                       
+-                      Q                                                                   
+-                                                                       Q                  
+-     Q                                                                                    
+-             Q                                                                            
+-                                                                                     Q    
+-                Q                                                                         
+-                                                                                Q         
+-                                                                                    Q     
+-                                                           Q                              
+-                                                                         Q                
+-                                   Q                                                      
+-                                                                               Q          
+-                  Q                                                                       
+-                                                               Q                          
+-                                                    Q                                     
+-                                                                    Q                     
+-                                                             Q                            
+-                                               Q                                          
+-                                                                            Q             
+-                   Q                                                                      
+-                                                                        Q                 
+-                                                      Q                                   
+-       Q                                                                                  
+-                              Q                                                           
+-                                                                                   Q      
+-                                                                          Q               
+-                                                       Q                                  
+-                                                     Q                                    
+-                    Q                                                                     
+-                                             Q                                            
+-                                                                                      Q   
+-      Q                                                                                   
+-                             Q                                                            
+-                                                                             Q            
+-                                    Q                                                     
+-                 Q                                                                        
+-        Q                                                                                 
+-                     Q                                                                    
+-                                                                  Q                       
+-                                                                                       Q  
+-                                      Q                                                   
+-                        Q                                                                 
+-                                                            Q                             
+-                                                                      Q                   
+-                                           Q                                              
+-          Q                                                                               
+-                                       Q                                                  
+-                                                                              Q           
+-                                                                                  Q       
+-Q                                                                                         
+-    Q                                                                                     
+-         Q                                                                                
+-                                                Q                                         
+-                                                                   Q                      
+-              Q                                                                           
+-                                                        Q                                 
+-               Q                                                                          
+-                                                                 Q                        
+-           Q                                                                              
+-                                     Q                                                    
+-                                                                           Q              
+-  Q                                                                                       
+-                          Q                                                               
+-                                          Q                                               
+-                               Q                                                          
+-                                                                     Q                    
+-                                                         Q                                
+-            Q                                                                             
+-                                                 Q                                        
+-                                        Q                                                 
+-                                            Q                                             
+-                                                                                        Q 
+
+*******************
+..................................................
+
+*** NQueens***
+Num solved = 5000 out of 5000 attempts
+
+Solve steps:
+Min: 1
+Avg: 547.812
+Max: 4672
+
+Solve time (ms):
+Min: 0
+Avg: 223.097
+Max: 1984
+Best solution: (quality = 1.0)
+ ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+- Q                                                                                                  
+-                                                                                Q                   
+-                                         Q                                                          
+-                                                   Q                                                
+-                                                                                    Q               
+-              Q                                                                                     
+-                                                                        Q                           
+-                                                                                   Q                
+-                                                               Q                                    
+-                    Q                                                                               
+-            Q                                                                                       
+-                Q                                                                                   
+-                                                                             Q                      
+-                                                            Q                                       
+-                  Q                                                                                 
+-                                                         Q                                          
+-                                   Q                                                                
+-                                                                      Q                             
+-                                                                           Q                        
+-                                          Q                                                         
+-                                                       Q                                            
+-                        Q                                                                           
+-                                                                                          Q         
+-                              Q                                                                     
+-                                                  Q                                                 
+-                     Q                                                                              
+-                                                                                                 Q  
+-                                     Q                                                              
+-                      Q                                                                             
+-                                                                                                  Q 
+-                                              Q                                                     
+-                                       Q                                                            
+-                                                                    Q                               
+-                                                                                                Q   
+-                                                                                            Q       
+-                                                                                       Q            
+-                               Q                                                                    
+-                                                                                  Q                 
+-                                                                              Q                     
+-                                                                            Q                       
+-                                                                                                   Q
+-                           Q                                                                        
+-                                                           Q                                        
+-         Q                                                                                          
+-                   Q                                                                                
+-                                                                     Q                              
+-                                                                          Q                         
+-                                                                                             Q      
+-                                      Q                                                             
+-                                               Q                                                    
+-                                  Q                                                                 
+-           Q                                                                                        
+-                                                                                      Q             
+-                                Q                                                                   
+-               Q                                                                                    
+-                            Q                                                                       
+-Q                                                                                                   
+-                                        Q                                                           
+-                                                                                         Q          
+-                                                                 Q                                  
+-                                                                                     Q              
+-    Q                                                                                               
+-                                            Q                                                       
+-                                                Q                                                   
+-  Q                                                                                                 
+-                                                                                              Q     
+-                         Q                                                                          
+-             Q                                                                                      
+-                                                                   Q                                
+-                                                        Q                                           
+-                                                              Q                                     
+-                                                                                           Q        
+-                       Q                                                                            
+-      Q                                                                                             
+-   Q                                                                                                
+-                                 Q                                                                  
+-                          Q                                                                         
+-                                                     Q                                              
+-                                                                       Q                            
+-                                                                               Q                    
+-                                                                                               Q    
+-                             Q                                                                      
+-                                    Q                                                               
+-                                                      Q                                             
+-                                                    Q                                               
+-                                                 Q                                                  
+-                                                                Q                                   
+-     Q                                                                                              
+-                                                          Q                                         
+-          Q                                                                                         
+-                                           Q                                                        
+-                                                                                        Q           
+-                 Q                                                                                  
+-                                                                                 Q                  
+-                                                                  Q                                 
+-        Q                                                                                           
+-                                                             Q                                      
+-       Q                                                                                            
+-                                             Q                                                      
+-                                                                         Q                          
+
+*******************
+..................................................
+
+*** TSP Cities***
+Num solved = 0 out of 5000 attempts
+
+Solve steps:
+Min: 5000
+Avg: 5000.0
+Max: 5000
+
+Solve time (ms):
+Min: 0
+Avg: 1.4218
+Max: 16
+Best solution: (quality = 0.6839435074729192)
+Dist: 9598 (7293) New York -> Houston -> Dallas -> Denver -> Phoenix -> Seattle -> Los Angeles -> Salt Lake City -> San Francisco -> Minneapolis -> Chicago -> St. Louis -> Boston -> New York
+*******************
+..................................................
+
+*** TSP Cities***
+Num solved = 1 out of 5000 attempts
+
+Solve steps:
+Min: 8732
+Avg: 49991.7464
+Max: 50000
+
+Solve time (ms):
+Min: 0
+Avg: 14.156
+Max: 47
+Best solution: (quality = 1.0)
+Dist: 7293 (7293) New York -> Boston -> Chicago -> Minneapolis -> Denver -> Salt Lake City -> Seattle -> San Francisco -> Los Angeles -> Phoenix -> Houston -> Dallas -> St. Louis -> New York
+*******************
