@@ -17,22 +17,48 @@ public class App
     	final int numAttempts = 5000;
     	final int numTriesPerAttempt = 5000;
     	
+    	runLogix(numAttempts, numTriesPerAttempt);
+    	runSnakesAndLadders(numAttempts, numTriesPerAttempt);
+    	runNQueens(numAttempts, numTriesPerAttempt, 8);
+    	runNQueens(numAttempts, numTriesPerAttempt, 10);
+    	runNQueens(numAttempts, numTriesPerAttempt, 20);
+    	runNQueens(numAttempts, numTriesPerAttempt, 30);
+    	runNQueens(numAttempts, numTriesPerAttempt, 40);
+    	runNQueens(numAttempts, numTriesPerAttempt, 50);
+    	runNQueens(numAttempts, numTriesPerAttempt, 60);
+    	runNQueens(numAttempts, numTriesPerAttempt, 70);
+    	runNQueens(numAttempts, numTriesPerAttempt, 80);
+    	runNQueens(numAttempts, numTriesPerAttempt, 90);
+    	runNQueens(numAttempts, numTriesPerAttempt, 100);
     	
-    	Puzzle puzzle;
-    	
-    	puzzle = new Logix();
+    	runTspCities(numAttempts, numTriesPerAttempt);
+    	runTspCities(numAttempts, numTriesPerAttempt*10);
+    }
+    
+    private static void runLogix(int numAttempts, int numTriesPerAttempt)
+    {
+    	Puzzle puzzle = new Logix();
     	List<Result> logixResults = solve(puzzle, numAttempts, numTriesPerAttempt);
     	computeStats("Logix", logixResults);
-    	
-    	puzzle = new SnakesAndLadders();
+    }
+    
+    private static void runSnakesAndLadders(int numAttempts, int numTriesPerAttempt)
+    {
+    	Puzzle puzzle = new SnakesAndLadders();
     	List<Result> snakesAndLaddersResults = solve(puzzle, numAttempts, numTriesPerAttempt);
     	computeStats("Snakes and Ladders", snakesAndLaddersResults);
-    	
-    	puzzle = new NQueens(50);
+    }
+    
+    private static void runNQueens(int numAttempts, int numTriesPerAttempt, int numQueens)
+    {
+    	Puzzle puzzle = new NQueens(numQueens);
     	List<Result> nQueensResults = solve(puzzle, numAttempts, numTriesPerAttempt);
-    	computeStats("NQueens", nQueensResults);
-    	
-    	puzzle = new Cities();
+    	computeStats(numQueens + " Queens", nQueensResults);
+    }
+    
+    private static void runTspCities(int numAttempts, int numTriesPerAttempt)
+    {
+    	Puzzle puzzle = new Cities();
     	List<Result> citiesResults = solve(puzzle, numAttempts, numTriesPerAttempt);
     	computeStats("TSP Cities", citiesResults);
     }
@@ -61,7 +87,7 @@ public class App
     	final Result bestResult = results.stream().max(Comparator.comparing(Result::getSolutionQuality)).get();
     	
     	System.out.println();
-    	System.out.println("*** " + name + "***");
+    	System.out.println("*** " + name + " ***");
     	System.out.println("Num solved = " + numSolved + " out of " + results.size() + " attempts");
     	System.out.println();
     	System.out.println("Solve steps:");
