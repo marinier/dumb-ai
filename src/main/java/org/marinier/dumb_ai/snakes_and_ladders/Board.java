@@ -1,4 +1,4 @@
-package org.marinier.puzzle_solver.snakes_and_ladders;
+package org.marinier.dumb_ai.snakes_and_ladders;
 
 import java.util.Arrays;
 

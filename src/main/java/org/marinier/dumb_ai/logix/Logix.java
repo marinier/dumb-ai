@@ -1,6 +1,6 @@
-package org.marinier.puzzle_solver.logix;
+package org.marinier.dumb_ai.logix;
 
-import org.marinier.puzzle_solver.Puzzle;
+import org.marinier.dumb_ai.Puzzle;
 
 public class Logix implements Puzzle {
 	

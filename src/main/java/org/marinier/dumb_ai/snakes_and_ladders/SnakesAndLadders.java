@@ -1,10 +1,10 @@
-package org.marinier.puzzle_solver.snakes_and_ladders;
+package org.marinier.dumb_ai.snakes_and_ladders;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import org.marinier.puzzle_solver.Puzzle;
+import org.marinier.dumb_ai.Puzzle;
 
 public class SnakesAndLadders implements Puzzle {
 

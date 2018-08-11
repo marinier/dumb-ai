@@ -1,4 +1,4 @@
-package org.marinier.puzzle_solver;
+package org.marinier.dumb_ai;
 
 public interface Puzzle {
 	

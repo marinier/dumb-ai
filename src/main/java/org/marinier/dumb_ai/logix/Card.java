@@ -1,4 +1,4 @@
-package org.marinier.puzzle_solver.logix;
+package org.marinier.dumb_ai.logix;
 
 import java.util.ArrayList;
 import java.util.List;

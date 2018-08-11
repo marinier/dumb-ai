@@ -1,4 +1,4 @@
-package org.marinier.puzzle_solver.n_queens;
+package org.marinier.dumb_ai.n_queens;
 
 import java.util.Collections;
 import java.util.List;

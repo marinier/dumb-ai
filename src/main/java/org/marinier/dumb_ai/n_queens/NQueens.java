@@ -1,6 +1,6 @@
-package org.marinier.puzzle_solver.n_queens;
+package org.marinier.dumb_ai.n_queens;
 
-import org.marinier.puzzle_solver.Puzzle;
+import org.marinier.dumb_ai.Puzzle;
 
 public class NQueens implements Puzzle {
 	

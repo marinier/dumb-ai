@@ -1,4 +1,4 @@
-package org.marinier.puzzle_solver.tsp;
+package org.marinier.dumb_ai.tsp;
 
 import java.util.Arrays;
 import java.util.List;

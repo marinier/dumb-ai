@@ -1,14 +1,14 @@
-package org.marinier.puzzle_solver;
+package org.marinier.dumb_ai;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.LongSummaryStatistics;
 
-import org.marinier.puzzle_solver.logix.Logix;
-import org.marinier.puzzle_solver.n_queens.NQueens;
-import org.marinier.puzzle_solver.snakes_and_ladders.SnakesAndLadders;
-import org.marinier.puzzle_solver.tsp.Cities;
+import org.marinier.dumb_ai.logix.Logix;
+import org.marinier.dumb_ai.n_queens.NQueens;
+import org.marinier.dumb_ai.snakes_and_ladders.SnakesAndLadders;
+import org.marinier.dumb_ai.tsp.Cities;
 
 public class App 
 {

@@ -1,10 +1,10 @@
-package org.marinier.puzzle_solver.tsp;
+package org.marinier.dumb_ai.tsp;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.marinier.puzzle_solver.Puzzle;
+import org.marinier.dumb_ai.Puzzle;
 
 public abstract class TravelingSalesmanProblem implements Puzzle {
 
